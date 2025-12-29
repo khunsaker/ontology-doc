@@ -3,7 +3,7 @@
 # {{ card.title }}
 
 ## Labels
-- **Grouping:** {{ card.labels.grouping | join(', ') }}
+- {{ card.labels.grouping | join(', ') }}
 
 {% if card.title in ['Hub Level','Category Level','Kind Level','Family Level'] %}
 ## Nodes (Shark_Name)
@@ -18,7 +18,7 @@
 
 ## Properties
 {% for p in card.properties -%}
-- `{{ p.name }}` ({{ p.type }}, {% if p.required %}required{% else %}optional{% endif %})
+- {{ p.name }}
 {% endfor %}
 
 ## Relationships
