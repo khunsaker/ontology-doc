@@ -1,0 +1,5261 @@
+{
+  "level": "ShipSubType",
+  "level_label": "ShipSubType",
+  "card": {
+    "title": "ShipSubType Level",
+    "labels": {
+      "grouping": [
+        "Object",
+        "SeaVessel",
+        "SharkNode",
+        "ShipSubType",
+        "ShipSystem",
+        "System"
+      ]
+    },
+    "node_names": [
+      "ASW Frigate",
+      "Air Defense Destroyer",
+      "Air Defense Frigate",
+      "Air Force Container",
+      "Amphibious Transport Dock",
+      "Anti-Submarine Destroyer",
+      "Army Resupply",
+      "Battlecruiser",
+      "Classic Frigate",
+      "Coast Guard Cutter",
+      "Coastal Patrol",
+      "Command Vessel",
+      "Cruiser - Guided Missile",
+      "Destroyer - Guided Missile",
+      "Diesel Sub",
+      "Dock Landing Ship",
+      "Dry Cargo",
+      "Expeditionary Fast Transport",
+      "Expeditionary Sea Base",
+      "Expeditionary Transfer Dock",
+      "Fast Combat Support",
+      "Flat Top Carrier",
+      "Fleet Replenishment Oiler",
+      "Frigate - Guided Missile",
+      "Harbor Tug",
+      "High Speed Transport",
+      "Intelligence Collector",
+      "Landing Craft Air Cushion",
+      "Landing Helicopter Dock",
+      "Littoral Combat Ship",
+      "Mine Countermeasures",
+      "Missile Corvette",
+      "Missile Range Instrumentation",
+      "Multi Purpose Corvette",
+      "Multi Role Frigate",
+      "Multi-Role Destroyer",
+      "Navigation Test Support",
+      "Non-Pressurized Liquid Tanker",
+      "Nuc Sub - Attack",
+      "Nuc Sub - Missile",
+      "Ocean Surveillance",
+      "Ocean Tug",
+      "Oceanographic Survey",
+      "Offshore Petroleum Distribution",
+      "Ordnance - Dry Cargo",
+      "Patrol Frigate",
+      "Petroleum Tanker",
+      "Petroleum Tanker (MSC Charter)",
+      "Pollution Monitor/Control",
+      "Prepositioned Stocks - Army",
+      "Prepositioned Stocks - Container and RO-RO",
+      "Prepositioned Stocks - MAGTF",
+      "Pressurized Gas or Liquid Tanker",
+      "Ramp Carrier",
+      "Research Craft",
+      "Special Warfare Support",
+      "Submarine Support",
+      "Submarine Tender",
+      "Submersible Craft",
+      "Surface Warfare Destroyer",
+      "Surge Sealift"
+    ],
+    "properties": [
+      {
+        "name": "Classification",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Default_Affiliation",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Shark_Name",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Shark_UUID",
+        "type": "unknown",
+        "required": false
+      }
+    ],
+    "relationships": {
+      "incoming": [
+        {
+          "from_name": "Aircraft Carrier",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Flat Top Carrier",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Aircraft Carrier",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Ramp Carrier",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Amphibious Assault Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Landing Craft Air Cushion",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Amphibious Assault Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Landing Helicopter Dock",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Corvette",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Littoral Combat Ship",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Corvette",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Missile Corvette",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Corvette",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Multi Purpose Corvette",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Cruiser",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Battlecruiser",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Cruiser",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Cruiser - Guided Missile",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Destroyer",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Air Defense Destroyer",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Destroyer",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Anti-Submarine Destroyer",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Destroyer",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Destroyer - Guided Missile",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Destroyer",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Multi-Role Destroyer",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Destroyer",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Surface Warfare Destroyer",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "ASW Frigate",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Air Defense Frigate",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Classic Frigate",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Coast Guard Cutter",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Frigate - Guided Missile",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Multi Role Frigate",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Frigate",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Patrol Frigate",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Submarine",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Diesel Sub",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Submarine",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Nuc Sub - Attack",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Combatant Submarine",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Nuc Sub - Missile",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Command and Control Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Command Vessel",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Experimental Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Missile Range Instrumentation",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Experimental Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Navigation Test Support",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "General Cargo",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Dry Cargo",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "General Cargo",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Prepositioned Stocks - MAGTF",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "General Support Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Special Warfare Support",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "General Support Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Submarine Support",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Landing Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Amphibious Transport Dock",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Landing Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Dock Landing Ship",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Mine Warfare Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Mine Countermeasures",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Patrol Vessel",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Coastal Patrol",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "RO-RO - Naval",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Prepositioned Stocks - Army",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "RO-RO - Naval",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Prepositioned Stocks - Container and RO-RO",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "RO-RO - Naval",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Surge Sealift",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Replenishment Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Air Force Container",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Replenishment Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Army Resupply",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Replenishment Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Fast Combat Support",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Replenishment Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Ordnance - Dry Cargo",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Scientific Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Pollution Monitor/Control",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Scientific Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Research Craft",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Scientific Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Submersible Craft",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surveillance Ship",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Intelligence Collector",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tanker",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Non-Pressurized Liquid Tanker",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tanker",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Pressurized Gas or Liquid Tanker",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tankers",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Non-Pressurized Liquid Tanker",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tankers",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Petroleum Tanker",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tankers",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Petroleum Tanker (MSC Charter)",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tankers",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Pressurized Gas or Liquid Tanker",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tender",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Submarine Tender",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Transfer Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Expeditionary Sea Base",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Transfer Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Expeditionary Transfer Dock",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Transfer Craft",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Offshore Petroleum Distribution",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Transport",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Expeditionary Fast Transport",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Transport",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "High Speed Transport",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tug",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Harbor Tug",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Tug",
+          "rel_type": "Ship_Sub_Type",
+          "to_name": "Ocean Tug",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSystem",
+            "ShipType",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ]
+        }
+      ],
+      "outgoing": [
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Brandenburg Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Fridtjof Nansen Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Georges Leygues Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Knox Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Koni Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Krivak Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Neustrashimy Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Type 22 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "ASW Frigate",
+          "rel_type": "Class",
+          "to_name": "Wielingen Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Destroyer",
+          "rel_type": "Class",
+          "to_name": "Hobart Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Destroyer",
+          "rel_type": "Class",
+          "to_name": "Horizon Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luyang II Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luyang III Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luzhou Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Destroyer",
+          "rel_type": "Class",
+          "to_name": "Type 45 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "Cassard Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "De Zeven Provincien Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "F-100 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "Iver Huitfeldt Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "Jacob van Heemskerck Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "MEKO A-200 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Defense Frigate",
+          "rel_type": "Class",
+          "to_name": "Sachsen Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Force Container",
+          "rel_type": "Class",
+          "to_name": "Titus Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Air Force Container",
+          "rel_type": "Instance",
+          "to_name": "MV CAPT David I. Lyon",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "MunitionsStorage",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Amphibious Transport Dock",
+          "rel_type": "Class",
+          "to_name": "San Antonio Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Anti-Submarine Destroyer",
+          "rel_type": "Class",
+          "to_name": "Udaloy Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Army Resupply",
+          "rel_type": "Class",
+          "to_name": "Carter Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Army Resupply",
+          "rel_type": "Class",
+          "to_name": "Page Class Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Battlecruiser",
+          "rel_type": "Class",
+          "to_name": "Kirov Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Classic Frigate",
+          "rel_type": "Class",
+          "to_name": "Original Six Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Coast Guard Cutter",
+          "rel_type": "Class",
+          "to_name": "Hamilton Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Coast Guard Cutter",
+          "rel_type": "Class",
+          "to_name": "Legend Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Coastal Patrol",
+          "rel_type": "Class",
+          "to_name": "Cyclone Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Command Vessel",
+          "rel_type": "Class",
+          "to_name": "Blue Ridge Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Cruiser - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Slava Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Cruiser - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Ticonderoga Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Akizuki Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Arleigh Burke Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Atago Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Dehli Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "KDX III Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Kolkata Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Type 42 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Destroyer - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Zumwalt Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Dock Landing Ship",
+          "rel_type": "Class",
+          "to_name": "Harpers Ferry Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Dock Landing Ship",
+          "rel_type": "Class",
+          "to_name": "Whidbey Island Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Dry Cargo",
+          "rel_type": "Instance",
+          "to_name": "SLNC Corsica",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Expeditionary Fast Transport",
+          "rel_type": "Class",
+          "to_name": "Spearhead Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Expeditionary Sea Base",
+          "rel_type": "Class",
+          "to_name": "Montford Point Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Expeditionary Transfer Dock",
+          "rel_type": "Class",
+          "to_name": "Montford Point Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Fast Combat Support",
+          "rel_type": "Class",
+          "to_name": "Supply Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Flat Top Carrier",
+          "rel_type": "Class",
+          "to_name": "Ford Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Flat Top Carrier",
+          "rel_type": "Class",
+          "to_name": "Nimitz Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Fleet Replenishment Oiler",
+          "rel_type": "Class",
+          "to_name": "Kaiser Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Bhumibol Adulyadej Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Bramaputra Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Constellation Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Jiangkai Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Jiangwei Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Oliver Hazard Perry Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Frigate - Guided Missile",
+          "rel_type": "Class",
+          "to_name": "Shivalik Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "High Speed Transport",
+          "rel_type": "Instance",
+          "to_name": "Formerly Superferry Alakai",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "High Speed Transport",
+          "rel_type": "Instance",
+          "to_name": "USNS Guam",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Intelligence Collector",
+          "rel_type": "Class",
+          "to_name": "Banner Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Landing Helicopter Dock",
+          "rel_type": "Class",
+          "to_name": "America Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Landing Helicopter Dock",
+          "rel_type": "Class",
+          "to_name": "Canberra Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Landing Helicopter Dock",
+          "rel_type": "Class",
+          "to_name": "Wasp Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Littoral Combat Ship",
+          "rel_type": "Class",
+          "to_name": "Freedom Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Littoral Combat Ship",
+          "rel_type": "Class",
+          "to_name": "Independence Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Mine Countermeasures",
+          "rel_type": "Class",
+          "to_name": "Avenger Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Missile Corvette",
+          "rel_type": "Class",
+          "to_name": "Bora Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Missile Corvette",
+          "rel_type": "Class",
+          "to_name": "Jiangdao Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Missile Range Instrumentation",
+          "rel_type": "Class",
+          "to_name": "Lorenzen Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Missile Range Instrumentation",
+          "rel_type": "Class",
+          "to_name": "Stalwart Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "A69 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Abhay Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Barroso Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Braunschweig Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Buyan Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Durjoy Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "G\u00f6teborg Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Inhauma Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Kamorta Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Khukri Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Kora Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "MEKO 140A16 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Milgem Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Minerva Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Nanuchka Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Parchim Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Peacock Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Pohang Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Sa'ar 5 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Steregushchy Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Veer Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Purpose Corvette",
+          "rel_type": "Class",
+          "to_name": "Visby Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Abukuma Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Anzac Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Artigliere Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Bremen Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Godavari Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Halifax Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Hydra Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Karel Doorman Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Kasturi Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Kotor Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Leander Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Lekiu Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Lupo Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Maestrale Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Niteroi Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Sigma Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Thetis Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Type 21 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Type 23 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Ulsan Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi Role Frigate",
+          "rel_type": "Class",
+          "to_name": "Vasco da Gama Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Asagiri Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Durand de la Penne Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Hatakaze Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Hatsuyuki Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "KDX II Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Kee Lung Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Kongo Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luhai Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luyang I Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "MEKO 360H2 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Murasame Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Multi-Role Destroyer",
+          "rel_type": "Class",
+          "to_name": "Takanami Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Navigation Test Support",
+          "rel_type": "Instance",
+          "to_name": "USNS Waters",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Nuc Sub - Attack",
+          "rel_type": "Class",
+          "to_name": "Los Angeles Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nuc Sub - Attack",
+          "rel_type": "Class",
+          "to_name": "Seawolf Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nuc Sub - Attack",
+          "rel_type": "Class",
+          "to_name": "Virginia Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nuc Sub - Missile",
+          "rel_type": "Class",
+          "to_name": "Columbia Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nuc Sub - Missile",
+          "rel_type": "Class",
+          "to_name": "Ohio Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ocean Surveillance",
+          "rel_type": "Class",
+          "to_name": "Impeccable Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ocean Surveillance",
+          "rel_type": "Class",
+          "to_name": "Victorious Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ocean Tug",
+          "rel_type": "Class",
+          "to_name": "Powhatan Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ocean Tug",
+          "rel_type": "Instance",
+          "to_name": "MV Gary Chouest",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Oceanographic Survey",
+          "rel_type": "Class",
+          "to_name": "Pathfinder Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Offshore Petroleum Distribution",
+          "rel_type": "Class",
+          "to_name": "Wheeler Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Offshore Petroleum Distribution",
+          "rel_type": "Instance",
+          "to_name": "USNS Fast Tempo",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ordnance - Dry Cargo",
+          "rel_type": "Class",
+          "to_name": "Lewis and Clark Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Patrol Frigate",
+          "rel_type": "Class",
+          "to_name": "Floreal Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Patrol Frigate",
+          "rel_type": "Class",
+          "to_name": "Formidible Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Patrol Frigate",
+          "rel_type": "Class",
+          "to_name": "Incheon Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Patrol Frigate",
+          "rel_type": "Class",
+          "to_name": "Jianghu Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Patrol Frigate",
+          "rel_type": "Class",
+          "to_name": "La Fayette Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Petroleum Tanker",
+          "rel_type": "Class",
+          "to_name": "Champion Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Petroleum Tanker",
+          "rel_type": "Instance",
+          "to_name": "MT SLNC Pax",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Petroleum Tanker (MSC Charter)",
+          "rel_type": "Instance",
+          "to_name": "ATB Galveston/Petrochem",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Petroleum Tanker (MSC Charter)",
+          "rel_type": "Instance",
+          "to_name": "MT Empire State",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Petroleum Tanker (MSC Charter)",
+          "rel_type": "Instance",
+          "to_name": "MT Evergreen State",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Petroleum Tanker (MSC Charter)",
+          "rel_type": "Instance",
+          "to_name": "MT Maersk Peary",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Prepositioned Stocks - Army",
+          "rel_type": "Class",
+          "to_name": "Watson Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Prepositioned Stocks - Container and RO-RO",
+          "rel_type": "Class",
+          "to_name": "Shugart Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Prepositioned Stocks - MAGTF",
+          "rel_type": "Class",
+          "to_name": "Bobo Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Admiral Kuznetsov Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Chakri Naruebet Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Charles de Gaulle Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Conti di Cavour Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Giuseppe Garibaldi Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Queen Elizabeth Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Type 001 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Type 002 Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ramp Carrier",
+          "rel_type": "Class",
+          "to_name": "Vikramaditya Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Special Warfare Support",
+          "rel_type": "Instance",
+          "to_name": "MV C Champion",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Special Warfare Support",
+          "rel_type": "Instance",
+          "to_name": "MV C Commando",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Special Warfare Support",
+          "rel_type": "Instance",
+          "to_name": "MV Carolyn Chouest",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Special Warfare Support",
+          "rel_type": "Instance",
+          "to_name": "MV Delores Chouest",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Special Warfare Support",
+          "rel_type": "Instance",
+          "to_name": "MV HOS Dominator",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Special Warfare Support",
+          "rel_type": "Instance",
+          "to_name": "MV Malama",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Submarine Support",
+          "rel_type": "Class",
+          "to_name": "Black Powder Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Submarine Tender",
+          "rel_type": "Class",
+          "to_name": "Land Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surface Warfare Destroyer",
+          "rel_type": "Class",
+          "to_name": "KDX I  Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surface Warfare Destroyer",
+          "rel_type": "Class",
+          "to_name": "Kashin Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surface Warfare Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luda Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surface Warfare Destroyer",
+          "rel_type": "Class",
+          "to_name": "Luhu Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surface Warfare Destroyer",
+          "rel_type": "Class",
+          "to_name": "Sovremenny Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Bob Hope Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Gordon Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Kocak Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Martin Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Shugart Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Watson Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Surge Sealift",
+          "rel_type": "Class",
+          "to_name": "Wheat Class",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubType",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ]
+        }
+      ]
+    }
+  },
+  "meta": {
+    "db": "Shark2",
+    "generated_utc": "2025-12-29T19:51:02+00:00",
+    "exporter_version": "0.1"
+  }
+}

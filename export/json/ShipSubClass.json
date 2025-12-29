@@ -1,0 +1,4838 @@
+{
+  "level": "ShipSubClass",
+  "level_label": "ShipSubClass",
+  "card": {
+    "title": "ShipSubClass Level",
+    "labels": {
+      "grouping": [
+        "Object",
+        "SeaVessel",
+        "SharkNode",
+        "ShipSubClass",
+        "ShipSystem",
+        "System"
+      ]
+    },
+    "node_names": [
+      "688i",
+      "Admiral Grigorovich",
+      "Arleigh Burke - Flight I  ",
+      "Arleigh Burke - Flight II",
+      "Arleigh Burke - Flight IIA",
+      "Arleigh Burke - Flight III",
+      "Blk I",
+      "Blk II",
+      "Blk III",
+      "Blk IV",
+      "Blk V",
+      "Jianghu I",
+      "Jianghu II",
+      "Jianghu III",
+      "Jianghu IV",
+      "Jianghu V",
+      "Jiangkai I",
+      "Jiangkai II",
+      "Jiangwei II",
+      "Jimmy Carter",
+      "Krivak I",
+      "Krivak II",
+      "Krivak III",
+      "Nanuchka II",
+      "Nanuchka III",
+      "Puller",
+      "Reagan",
+      "Roosevelt",
+      "San Antonio - Flight I",
+      "San Antonio - Flight II",
+      "Spearhead Flight I",
+      "Spearhead Flight II",
+      "Talwar",
+      "Ticonderoga - AAW",
+      "Ticonderoga - BMD",
+      "Udaloy I",
+      "Udaloy II"
+    ],
+    "properties": [
+      {
+        "name": "Classification",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Default_Affiliation",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Shark_Name",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Shark_UUID",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Ship_Sub_Type",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Ship_Type",
+        "type": "unknown",
+        "required": false
+      }
+    ],
+    "relationships": {
+      "incoming": [
+        {
+          "from_name": "Arleigh Burke Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Arleigh Burke - Flight I  ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Arleigh Burke - Flight II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Arleigh Burke - Flight IIA",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Arleigh Burke - Flight III",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jianghu Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jianghu I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jianghu Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jianghu II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jianghu Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jianghu III",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jianghu Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jianghu IV",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jianghu Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jianghu V",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jiangkai Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jiangkai I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jiangkai Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jiangkai II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Jiangwei Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jiangwei II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Krivak Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Admiral Grigorovich",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Krivak Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Krivak I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Krivak Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Krivak II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Krivak Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Krivak III",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Krivak Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Talwar",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Los Angeles Class",
+          "rel_type": "Sub_Class",
+          "to_name": "688i",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Montford Point Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Puller",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nanuchka Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Nanuchka II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nanuchka Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Nanuchka III",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nimitz Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Reagan",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Nimitz Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Roosevelt",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "San Antonio Class",
+          "rel_type": "Sub_Class",
+          "to_name": "San Antonio - Flight I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "San Antonio Class",
+          "rel_type": "Sub_Class",
+          "to_name": "San Antonio - Flight II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Seawolf Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Jimmy Carter",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Spearhead Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Spearhead Flight I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Spearhead Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Spearhead Flight II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Ticonderoga - AAW",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Ticonderoga - BMD",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Udaloy Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Udaloy I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Udaloy Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Udaloy II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Virginia Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Blk I",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Virginia Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Blk II",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Virginia Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Blk III",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Virginia Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Blk IV",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        },
+        {
+          "from_name": "Virginia Class",
+          "rel_type": "Sub_Class",
+          "to_name": "Blk V",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ]
+        }
+      ],
+      "outgoing": [
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Albany",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Alexandria",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Annapolis",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Asheville",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Boise",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Charlotte",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Cheyenne",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Columbia",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Columbus",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Greeneville",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Hampton",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Hartford",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Jefferson City",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Montpelier",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Pasadena",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS San Juan",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Santa Fe",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Scranton",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Springfield",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Toledo",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Topeka",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "688i",
+          "rel_type": "Instance",
+          "to_name": "USS Tucson",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Arleigh Burke",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Barry",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Benfold ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Carney ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Cole ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Curtis Wilbur",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Fitzgerald ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Gonzalez",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Hopper ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS John Paul Jones",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS John S McCain",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Laboon",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Milius ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Mitscher",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Paul Hamilton",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Ramage",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Ross ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Russell ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Stethem",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS Stout",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight I  ",
+          "rel_type": "Instance",
+          "to_name": "USS The Sullivans",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS Decatur",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS Donald Cook",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS Higgins",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS Mahan ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS McFaul ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS O'Kane",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight II",
+          "rel_type": "Instance",
+          "to_name": "USS Porter",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Carl M. Levin",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Daniel Inouye",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Delbert D. Black",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Frank E. Petersen, Jr.",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Harvey C. Barnum, Jr.",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU John Basilone",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Lenah H. Sutcliffe Higbee",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "PCU Patrick Gallagher",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Bainsridge",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Bulkeley ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Chafee ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Chung-Hoon",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Dewey",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Farragut ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Forrest Sherman ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Gravely",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Gridley ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Halsey ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Howard",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS James E Williams ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Jason Dunham ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS John Finn",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Kidd",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Lassen ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Mason ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS McCampbell ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Michael Murphy ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Momsen",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Mustin ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Nitze ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Oscar Austin",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Paul Ignatius",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Pinckney ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Preble",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Rafael Peralta ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Ralph Johnson",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Roosevelt ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Sampson",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Shoup ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Spruance ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Sterett",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Stockdale",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Thomas Hudner",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Truxtun",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Wayne E. Meyer ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS William P. Lawrence",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight IIA",
+          "rel_type": "Instance",
+          "to_name": "USS Winston S Churchill",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "George M. Neal",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "Jeremiah Denton",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "John E. Kilmer",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "PCU Jack H. Lucas",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "PCU Louis H. Wilson Jr.",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "Quentin Walsh",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "Richard G. Lugar",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "Sam Nunn",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "Ted Stevens",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "Thad Cochran",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Arleigh Burke - Flight III",
+          "rel_type": "Instance",
+          "to_name": "William Charette",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk I",
+          "rel_type": "Instance",
+          "to_name": "USS Hawaii ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk I",
+          "rel_type": "Instance",
+          "to_name": "USS North Carolina ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk I",
+          "rel_type": "Instance",
+          "to_name": "USS Texas",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk I",
+          "rel_type": "Instance",
+          "to_name": "USS Virginia",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk II",
+          "rel_type": "Instance",
+          "to_name": "USS California",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk II",
+          "rel_type": "Instance",
+          "to_name": "USS Minnesota ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk II",
+          "rel_type": "Instance",
+          "to_name": "USS Mississippi",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk II",
+          "rel_type": "Instance",
+          "to_name": "USS Missouri ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk II",
+          "rel_type": "Instance",
+          "to_name": "USS New Hampshire",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk II",
+          "rel_type": "Instance",
+          "to_name": "USS New Mexico",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS Colorado",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS Delaware",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS Illinois",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS Indiana",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS John Warner",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS North Dakota",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS South Dakota",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk III",
+          "rel_type": "Instance",
+          "to_name": "USS Washington",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Arkansas",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Hyman G. Rickover",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Idaho",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Iowa",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Massachusetts",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Montana ",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU New Jersey",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "PCU Utah",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "USS Oregon",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk IV",
+          "rel_type": "Instance",
+          "to_name": "USS Vermont",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk V",
+          "rel_type": "Instance",
+          "to_name": "USS Arizona",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Blk V",
+          "rel_type": "Instance",
+          "to_name": "USS Oklahoma",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Jimmy Carter",
+          "rel_type": "Instance",
+          "to_name": "USS Jimmy Carter",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Puller",
+          "rel_type": "Instance",
+          "to_name": "USNS Herschel \"Woody\" Williams",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Puller",
+          "rel_type": "Instance",
+          "to_name": "USNS Lewis B. Puller",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Reagan",
+          "rel_type": "Instance",
+          "to_name": "USS George H.W. Bush",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Reagan",
+          "rel_type": "Instance",
+          "to_name": "USS Ronald Reagan",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Roosevelt",
+          "rel_type": "Instance",
+          "to_name": "USS Abraham Lincoln",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Roosevelt",
+          "rel_type": "Instance",
+          "to_name": "USS George Washington",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Roosevelt",
+          "rel_type": "Instance",
+          "to_name": "USS Harry S. Truman",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Roosevelt",
+          "rel_type": "Instance",
+          "to_name": "USS John C. Stennis",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Roosevelt",
+          "rel_type": "Instance",
+          "to_name": "USS Theodore Roosevelt",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "PCU Fort Lauderdale",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "PCU Richard M. McCool",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS Anchorage",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS Arlington",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS Green Bay",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS John P. Murtha",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS Mesa Verde",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS New Orleans",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS New York",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS Portland",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS San Antonio",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS San Diego",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight I",
+          "rel_type": "Instance",
+          "to_name": "USS Somerset",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "San Antonio - Flight II",
+          "rel_type": "Instance",
+          "to_name": "Harrisburg",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Apalachicola",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Brunswick",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Burlington",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Carson City",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Choctaw County",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS City of Bismarck",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Fall River",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Millinocket",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Newport",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Puerto Rico",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Spearhead",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Trenton",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight I",
+          "rel_type": "Instance",
+          "to_name": "USNS Yuma",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight II",
+          "rel_type": "Instance",
+          "to_name": "USNS Cody",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Spearhead Flight II",
+          "rel_type": "Instance",
+          "to_name": "USNS Point Loma",
+          "source_labels": [
+            "Object",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Antietam",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Anzio",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Bunker Hill",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Cape St. George",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Chancellorsville",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Chosin",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Cowpens",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Gettysburg",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Hue City",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Lake Champlain",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Leyte Gulf",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Mobile Bay",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Normandy",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Philippine Sea",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Princeton",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS San Jacinto",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - AAW",
+          "rel_type": "Instance",
+          "to_name": "USS Vicksburg",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - BMD",
+          "rel_type": "Instance",
+          "to_name": "USS Lake Erie",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - BMD",
+          "rel_type": "Instance",
+          "to_name": "USS Monterey",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - BMD",
+          "rel_type": "Instance",
+          "to_name": "USS Port Royal",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - BMD",
+          "rel_type": "Instance",
+          "to_name": "USS Shiloh",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        },
+        {
+          "from_name": "Ticonderoga - BMD",
+          "rel_type": "Instance",
+          "to_name": "USS Vella Gulf",
+          "source_labels": [
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipSubClass",
+            "ShipSystem",
+            "System"
+          ],
+          "target_labels": [
+            "InstanceNode",
+            "Object",
+            "SeaVessel",
+            "SharkNode",
+            "ShipInstance"
+          ]
+        }
+      ]
+    }
+  },
+  "meta": {
+    "db": "Shark2",
+    "generated_utc": "2025-12-29T19:51:03+00:00",
+    "exporter_version": "0.1"
+  }
+}

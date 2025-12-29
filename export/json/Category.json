@@ -1,0 +1,429 @@
+{
+  "level": "Category",
+  "level_label": "Category",
+  "card": {
+    "title": "Category Level",
+    "labels": {
+      "grouping": [
+        "AirVehicle",
+        "Armament",
+        "Category",
+        "Location",
+        "People",
+        "SeaVessel",
+        "SharkNode"
+      ]
+    },
+    "node_names": [
+      "Aircraft",
+      "Organization",
+      "Place",
+      "Ship",
+      "Weapon"
+    ],
+    "properties": [
+      {
+        "name": "Classification",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Primary_Affiliation",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Shark_Name",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Shark_UUID",
+        "type": "unknown",
+        "required": false
+      },
+      {
+        "name": "Status",
+        "type": "unknown",
+        "required": false
+      }
+    ],
+    "relationships": {
+      "incoming": [
+        {
+          "from_name": "Shark2",
+          "rel_type": "Category",
+          "to_name": "Aircraft",
+          "source_labels": [
+            "Hub",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "AirVehicle",
+            "Category",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Shark2",
+          "rel_type": "Category",
+          "to_name": "Organization",
+          "source_labels": [
+            "Hub",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Category",
+            "People",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Shark2",
+          "rel_type": "Category",
+          "to_name": "Place",
+          "source_labels": [
+            "Hub",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Shark2",
+          "rel_type": "Category",
+          "to_name": "Ship",
+          "source_labels": [
+            "Hub",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Category",
+            "SeaVessel",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Shark2",
+          "rel_type": "Category",
+          "to_name": "Weapon",
+          "source_labels": [
+            "Hub",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Armament",
+            "Category",
+            "SharkNode"
+          ]
+        }
+      ],
+      "outgoing": [
+        {
+          "from_name": "Aircraft",
+          "rel_type": "Kind",
+          "to_name": "Manned",
+          "source_labels": [
+            "AirVehicle",
+            "Category",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "AirKind",
+            "AirVehicle",
+            "Kind",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Aircraft",
+          "rel_type": "Kind",
+          "to_name": "Unmanned",
+          "source_labels": [
+            "AirVehicle",
+            "Category",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "AirKind",
+            "AirVehicle",
+            "Kind",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Organization",
+          "rel_type": "Kind",
+          "to_name": "International",
+          "source_labels": [
+            "Category",
+            "People",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Kind",
+            "OrgKind",
+            "People",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Organization",
+          "rel_type": "Kind",
+          "to_name": "National",
+          "source_labels": [
+            "Category",
+            "People",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Kind",
+            "OrgKind",
+            "People",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "Africa",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "Asia",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "Continent of Antarctica",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "Continent of Australia",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "Europe",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "North America",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "Oceanic Islands",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Place",
+          "rel_type": "Kind",
+          "to_name": "South America",
+          "source_labels": [
+            "Category",
+            "Location",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Continent",
+            "Kind",
+            "Location",
+            "Object",
+            "SharkNode"
+          ]
+        },
+        {
+          "from_name": "Ship",
+          "rel_type": "Kind",
+          "to_name": "Merchant",
+          "source_labels": [
+            "Category",
+            "SeaVessel",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Kind",
+            "SeaVessel",
+            "SharkNode",
+            "ShipKind"
+          ]
+        },
+        {
+          "from_name": "Ship",
+          "rel_type": "Kind",
+          "to_name": "Naval",
+          "source_labels": [
+            "Category",
+            "SeaVessel",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Kind",
+            "SeaVessel",
+            "SharkNode",
+            "ShipKind"
+          ]
+        },
+        {
+          "from_name": "Weapon",
+          "rel_type": "Kind",
+          "to_name": "Bombs",
+          "source_labels": [
+            "Armament",
+            "Category",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Armament",
+            "Kind",
+            "SharkNode",
+            "WeaponKind"
+          ]
+        },
+        {
+          "from_name": "Weapon",
+          "rel_type": "Kind",
+          "to_name": "Missile",
+          "source_labels": [
+            "Armament",
+            "Category",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Armament",
+            "Kind",
+            "SharkNode",
+            "WeaponKind"
+          ]
+        },
+        {
+          "from_name": "Weapon",
+          "rel_type": "Kind",
+          "to_name": "Projectile",
+          "source_labels": [
+            "Armament",
+            "Category",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Armament",
+            "Kind",
+            "SharkNode",
+            "WeaponKind"
+          ]
+        },
+        {
+          "from_name": "Weapon",
+          "rel_type": "Kind",
+          "to_name": "Torpedo",
+          "source_labels": [
+            "Armament",
+            "Category",
+            "SharkNode"
+          ],
+          "target_labels": [
+            "Armament",
+            "Kind",
+            "SharkNode",
+            "WeaponKind"
+          ]
+        }
+      ]
+    }
+  },
+  "meta": {
+    "db": "Shark2",
+    "generated_utc": "2025-12-29T19:50:55+00:00",
+    "exporter_version": "0.1"
+  }
+}

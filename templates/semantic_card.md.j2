@@ -1,0 +1,37 @@
+\newpage
+
+# {{ card.title }}
+
+## Labels
+- **Grouping:** {{ card.labels.grouping | join(', ') }}
+
+{% if card.title in ['Hub Level','Category Level','Kind Level','Family Level'] %}
+## Nodes (Shark_Name)
+{% if card.node_names is defined and card.node_names | length > 0 -%}
+{% for n in card.node_names -%}
+- {{ n }}
+{% endfor %}
+{% else -%}
+- (none)
+{% endif %}
+{% endif %}
+
+## Properties
+{% for p in card.properties -%}
+- `{{ p.name }}` ({{ p.type }}, {% if p.required %}required{% else %}optional{% endif %})
+{% endfor %}
+
+## Relationships
+
+### Outgoing
+{% if card.relationships_agg.outgoing | length == 0 -%}
+- (none)
+{% else -%}
+{% for r in card.relationships_agg.outgoing -%}
+- ({{ r.from_display }})-[{{ r.rel_type }}]->({{ r.to_display }}){% if r.count > 1 %}  (count: {{ r.count }}){% endif %}  
+  **Source Labels:** {{ r.source_labels_str }}  
+  **Target Labels:** {{ r.target_labels_str }}  
+
+{% endfor -%}
+{% endif %}
+

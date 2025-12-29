@@ -1,0 +1,16 @@
+Hub
+Category
+Kind
+Family
+AirType
+AirSubType
+AirVariant
+AirSubVariant
+AirModel
+AirSubModel
+AirInstance
+ShipType
+ShipSubType
+ShipClass
+ShipSubClass
+ShipInstance
