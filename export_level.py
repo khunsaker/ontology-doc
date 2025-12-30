@@ -81,6 +81,17 @@ def export_level(cfg, level_label):
     ORDER BY from_name, rel_type, to_name
     """
 
+    q_parent_groups = f"""
+    MATCH (p)-[:`{level_label}`]->(n:`{level_label}`)
+    WHERE p.Shark_Name IS NOT NULL AND trim(toString(p.Shark_Name)) <> ''
+      AND n.Shark_Name IS NOT NULL AND trim(toString(n.Shark_Name)) <> ''
+    RETURN
+      p.Shark_Name AS parent_name,
+      collect(DISTINCT n.Shark_Name) AS child_names
+    ORDER BY parent_name
+    """
+
+
     # ----------------------------
     # Execute queries
     # ----------------------------
@@ -93,6 +104,8 @@ def export_level(cfg, level_label):
             props = session.execute_read(lambda tx: fetch_all(tx, q_props))
             incoming = session.execute_read(lambda tx: fetch_all(tx, q_incoming))
             outgoing = session.execute_read(lambda tx: fetch_all(tx, q_outgoing))
+            parent_groups_rows = session.execute_read(lambda tx: fetch_all(tx, q_parent_groups))
+
 
     # ----------------------------
     # Normalize data
@@ -104,6 +117,37 @@ def export_level(cfg, level_label):
         node_names = sorted(set(nodes[0]["node_names"]))
 
     properties = sorted(set(props[0]["props"])) if props else []
+
+    def group_heading(parent):
+        # Your examples for Kind level:
+        # Aircraft Kind, Organization Kind, Place Kind, Ships Kind, Weapon Kind
+        if level_label == "Kind":
+            if parent == "Ship":
+                return "Ships Kind"
+            if parent == "Aircraft":
+                return "Aircraft Kind"
+            if parent == "Organization":
+                return "Organization Kind"
+            if parent == "Place":
+                return "Place Kind"
+            if parent == "Weapon":
+                return "Weapon Kind"
+        # Category example: Hub (Parent)
+        if level_label == "Category" and parent == "Hub":
+            return "Hub (Parent)"
+        return f"{parent} {level_label}"
+
+    parent_groups = []
+    if parent_groups_rows:
+        for row in parent_groups_rows:
+            parent = row["parent_name"]
+            kids = sorted(set(row.get("child_names") or []))
+            parent_groups.append({
+                "parent": parent,
+                "heading": group_heading(parent),
+                "nodes": kids
+            })
+
 
     def norm(rows):
         return [
@@ -125,6 +169,7 @@ def export_level(cfg, level_label):
         "level_label": level_label,
         "card": {
             "title": f"{level_label} Level",
+	    "parent_groups": parent_groups,
             "labels": {
                 "grouping": grouping_labels
             },

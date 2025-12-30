@@ -2,36 +2,68 @@
 
 # {{ card.title }}
 
-## Labels
+## Node Labels
 - {{ card.labels.grouping | join(', ') }}
 
-{% if card.title in ['Hub Level','Category Level','Kind Level','Family Level'] %}
+{% if card.parent_groups is defined and (card.parent_groups | length) > 0 %}
 ## Nodes (Shark_Name)
-{% if card.node_names is defined and card.node_names | length > 0 -%}
-{% for n in card.node_names -%}
+{% for g in card.parent_groups %}
+### {{ g.heading }} Nodes
+{% if g.nodes is defined and (g.nodes | length) > 0 %}
+{% for n in g.nodes %}
 - {{ n }}
 {% endfor %}
-{% else -%}
+{% else %}
 - (none)
 {% endif %}
+
+{% endfor %}
 {% endif %}
 
-## Properties
-{% for p in card.properties -%}
+## Node Properties
+{% for p in card.properties %}
 - {{ p.name }}
 {% endfor %}
 
 ## Relationships
 
 ### Outgoing
-{% if card.relationships_agg.outgoing | length == 0 -%}
+{% if card.relationships_agg.outgoing | length == 0 %}
 - (none)
-{% else -%}
-{% for r in card.relationships_agg.outgoing -%}
-- ({{ r.from_display }})-[{{ r.rel_type }}]->({{ r.to_display }}){% if r.count > 1 %}  (count: {{ r.count }}){% endif %}  
-  **Source Labels:** {{ r.source_labels_str }}  
-  **Target Labels:** {{ r.target_labels_str }}  
+{% else %}
 
-{% endfor -%}
+{% if card.parent_groups is defined and (card.parent_groups | length) > 0 %}
+{% for g in card.parent_groups %}
+#### {{ g.heading }} Relationships
+{% set ns = namespace(any=false, prev_from=None) %}
+{% for r in card.relationships_agg.outgoing %}
+{% if r.from_display in g.nodes %}
+{% if ns.prev_from is not none and r.from_display != ns.prev_from %}
+
+{% endif %}
+{% set ns.any = true %}
+{% set ns.prev_from = r.from_display %}
+- ({{ r.from_display }})-[{{ r.rel_type }}]->({{ r.to_display }}){% if r.count > 1 %}  (count: {{ r.count }}){% endif %}  
+  Source Labels: {{ r.source_labels_str }}  
+  Target Labels: {{ r.target_labels_str }}
+{% endif %}
+{% endfor %}
+{% if not ns.any %}
+- (none)
 {% endif %}
 
+{% endfor %}
+{% else %}
+{% set ns = namespace(prev_from=None) %}
+{% for r in card.relationships_agg.outgoing %}
+{% if ns.prev_from is not none and r.from_display != ns.prev_from %}
+
+{% endif %}
+{% set ns.prev_from = r.from_display %}
+- ({{ r.from_display }})-[{{ r.rel_type }}]->({{ r.to_display }}){% if r.count > 1 %}  (count: {{ r.count }}){% endif %}  
+  Source Labels: {{ r.source_labels_str }}  
+  Target Labels: {{ r.target_labels_str }}
+{% endfor %}
+{% endif %}
+
+{% endif %}
