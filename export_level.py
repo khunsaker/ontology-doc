@@ -32,11 +32,6 @@ def fetch_all(tx, query: str):
 
 
 def rel_type_exists(session, rel_type: str) -> bool:
-    """
-    Return True iff the relationship type exists in the database.
-    Uses db.relationshipTypes() to avoid warnings from pattern-matching on
-    non-existent relationship types.
-    """
     try:
         rec = session.run(
             """
@@ -48,7 +43,6 @@ def rel_type_exists(session, rel_type: str) -> bool:
         ).single()
         return bool(rec and rec.get("exists"))
     except Exception:
-        # If procedures are unavailable/restricted, fail closed (skip parent grouping).
         return False
 
 
@@ -68,46 +62,99 @@ def norm_relationship_rows(rows):
 
 
 # -----------------------------------------------------------------------------
-# Generalization logic
+# Generalization logic + exceptions
 # -----------------------------------------------------------------------------
 
-# Ontology ladder. Unknown levels are treated as "deep" to prevent explosion.
 LEVEL_ORDER = ["Hub", "Category", "Kind", "Family", "Type", "Class", "Instance"]
 
-# Labels that are documentation noise and should not drive generalization.
 NOISE_LABELS = {
     "Object", "People", "Person", "SharkNode", "System",
     "__MigrationNode__", "__MigrationRelationship__"
 }
 
-# Canonical display names (tune as desired). Manufacturer is treated as Company.
+# Canonical display names (tune freely)
 CANONICAL_DISPLAY = {
-    "AirType": "Air Type",
-    "AirSystem": "Air System",
-    "AirVehicle": "Air Vehicle",
-    "ArmedForces": "Armed Forces",
+    # Air specificity (keep exact strings as requested)
+    "AirType": "AirType",
+    "AirSubType": "AirSubType",
+    "AirVariant": "AirVariant",
+    "AirSubVariant": "AirSubVariant",
+    "AirModel": "AirModel",
+    "AirSubModel": "AirSubModel",
+    "AirInstance": "AirInstance",
+
+    # Ship specificity
+    "ShipType": "ShipType",
+    "ShipSubType": "ShipSubType",
+    "ShipClass": "ShipClass",
+    "ShipSubClass": "ShipSubClass",
+    "ShipInstance": "ShipInstance",
+
+    # Other common endpoints
+    "ArmedForces": "ArmedForces",
     "Company": "Company",
-    "Manufacturer": "Company",
+    "Manufacturer": "Company",  # treat as synonym unless you want distinct
     "Organization": "Organization",
     "Place": "Place",
-    "Weapon": "Weapon",
-    "Ship": "Ship",
+    "Country": "Country",
+
+    # Broad labels (allowed but de-prioritized)
+    "AirSystem": "AirSystem",
+    "AirVehicle": "AirVehicle",
+    "SeaVessel": "SeaVessel",
+
+    # Family overrides requested
+    "WeaponType": "WeaponType",
 }
 
-# Priority: first match wins after removing NOISE_LABELS.
+# Prefer most-specific Air label if present (most specific first)
+AIR_SPECIFIC_PRIORITY = [
+    "AirInstance",
+    "AirSubModel",
+    "AirModel",
+    "AirSubVariant",
+    "AirVariant",
+    "AirSubType",
+    "AirType",
+]
+
+# Prefer most-specific Ship label if present (most specific first)
+SHIP_SPECIFIC_PRIORITY = [
+    "ShipInstance",
+    "ShipSubClass",
+    "ShipClass",
+    "ShipSubType",
+    "ShipType",
+]
+
+# General label priority fallback (after domain-specific specificity checks)
 LEVEL_LABEL_PRIORITY = [
     "Hub", "Category", "Kind", "Family",
-    "AirType",
-    "Type", "Class", "Instance",
+    "WeaponType",
     "Company", "Manufacturer",
     "ArmedForces",
     "Organization",
+    "Country",
     "Place",
-    "Weapon",
-    "Ship",
+    # Broad/utility labels last
     "AirSystem",
     "AirVehicle",
+    "SeaVessel",
 ]
+
+# Levels that should render relationships in generalized mode even if nodes are listed.
+GENERALIZE_RELS_LEVELS = {"Family"}
+
+# Family-level relationship-specific target overrides
+REL_TARGET_OVERRIDES = {
+    # Requested:
+    "Weapon_Type": "WeaponType",
+    "Derivative": "AirType",
+}
+
+# Kind-level collapse: Nation => Country
+KIND_COLLAPSE_REL_TYPES = {"Nation"}
+KIND_COLLAPSE_TARGET = {"Nation": "Country"}
 
 
 def _safe_level_index(level_label: str) -> int:
@@ -118,38 +165,49 @@ def _safe_level_index(level_label: str) -> int:
 
 
 def is_deep_level(level_label: str) -> bool:
-    """Deep = strictly below Family in the ontology ladder."""
     return _safe_level_index(level_label) > _safe_level_index("Family")
 
 
 def pick_level_display(labels: List[str]) -> str:
     """
-    Choose a stable generalized endpoint label from a node's label set,
-    ignoring noise labels. Uses a priority list, then falls back.
+    Generalized endpoint selection.
+
+    - If Air hierarchy labels exist, choose the MOST SPECIFIC Air* label.
+    - If Ship hierarchy labels exist, choose the MOST SPECIFIC Ship* label.
+    - Otherwise choose by LEVEL_LABEL_PRIORITY.
+    - Otherwise fallback to any remaining label.
     """
-    s = set(labels or [])
-    s = s - NOISE_LABELS
+    s = set(labels or []) - NOISE_LABELS
+
+    for key in AIR_SPECIFIC_PRIORITY:
+        if key in s:
+            return CANONICAL_DISPLAY.get(key, key)
+
+    for key in SHIP_SPECIFIC_PRIORITY:
+        if key in s:
+            return CANONICAL_DISPLAY.get(key, key)
 
     for key in LEVEL_LABEL_PRIORITY:
         if key in s:
             return CANONICAL_DISPLAY.get(key, key)
 
-    # Fallback: any remaining label (stable)
     for lbl in sorted(s):
         return CANONICAL_DISPLAY.get(lbl, lbl)
 
     return "Node"
 
 
-def build_outgoing_generalized(outgoing_norm: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def build_outgoing_generalized(
+    outgoing_norm: List[Dict[str, Any]],
+    *,
+    level_label: str,
+) -> List[Dict[str, Any]]:
     """
-    Build generalized unique outgoing rel patterns with counts, from the
-    normalized outgoing relationship rows.
+    Build generalized unique outgoing rel patterns with counts.
 
-    Safer behavior:
-      - treats rel_type as invalid if blank/whitespace
-      - tolerates missing/empty labels without throwing
-      - produces stable output ordering
+    Supports:
+      - Family-level relationship target overrides (REL_TARGET_OVERRIDES)
+      - Air/Ship specificity via pick_level_display()
     """
     counter: Counter[Tuple[str, str, str]] = Counter()
 
@@ -167,24 +225,22 @@ def build_outgoing_generalized(outgoing_norm: List[Dict[str, Any]]) -> List[Dict
         from_level = pick_level_display(src_labels)
         to_level = pick_level_display(tgt_labels)
 
+        # Family overrides requested
+        if level_label == "Family" and rel_type in REL_TARGET_OVERRIDES:
+            to_level = REL_TARGET_OVERRIDES[rel_type]
+
         counter[(from_level, rel_type, to_level)] += 1
 
     out = [
         {"from_level": k[0], "rel_type": k[1], "to_level": k[2], "count": v}
         for k, v in counter.items()
     ]
-
-    # Sort: most represented first, then stable alpha
     out.sort(key=lambda x: (-x["count"], x["from_level"], x["rel_type"], x["to_level"]))
     return out
 
 
 def export_level(cfg: dict, level_label: str) -> dict:
     level_label = sanitize_label(level_label)
-
-    # ----------------------------
-    # Cypher Queries
-    # ----------------------------
 
     q_grouping = f"""
     MATCH (n:`{level_label}`)
@@ -208,7 +264,7 @@ def export_level(cfg: dict, level_label: str) -> dict:
     RETURN collect(DISTINCT k) AS props
     """
 
-    # Outgoing only (Incoming intentionally removed to prevent duplication)
+    # Outgoing only
     q_outgoing = f"""
     MATCH (src:`{level_label}`)-[r]->(tgt)
     WHERE src.Shark_Name IS NOT NULL AND tgt.Shark_Name IS NOT NULL
@@ -221,7 +277,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
     ORDER BY from_name, rel_type, to_name
     """
 
-    # Parent grouping assumes: (p)-[:<LevelLabel>]->(n:<LevelLabel>)
     q_parent_groups = f"""
     MATCH (p)-[:`{level_label}`]->(n:`{level_label}`)
     WHERE p.Shark_Name IS NOT NULL AND trim(toString(p.Shark_Name)) <> ''
@@ -232,9 +287,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
     ORDER BY parent_name
     """
 
-    # ----------------------------
-    # Execute queries
-    # ----------------------------
     with GraphDatabase.driver(cfg["uri"], auth=(cfg["user"], cfg["password"])) as driver:
         with driver.session(database=cfg["database"]) as session:
             grouping_rows = session.execute_read(lambda tx: fetch_all(tx, q_grouping))
@@ -246,9 +298,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
             if rel_type_exists(session, level_label):
                 parent_groups_rows = session.execute_read(lambda tx: fetch_all(tx, q_parent_groups))
 
-    # ----------------------------
-    # Normalize data
-    # ----------------------------
     grouping_labels = []
     if grouping_rows and "grouping" in grouping_rows[0]:
         grouping_labels = sorted(set(grouping_rows[0]["grouping"] or []))
@@ -256,7 +305,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
     node_names = []
     if nodes_rows and "node_names" in nodes_rows[0]:
         node_names = sorted(set(nodes_rows[0]["node_names"] or []))
-
     total_nodes = len(node_names)
 
     properties = []
@@ -286,19 +334,47 @@ def export_level(cfg: dict, level_label: str) -> dict:
             kids = sorted(set(row.get("child_names") or []))
             if parent:
                 parent_groups.append(
-                    {
-                        "parent": parent,
-                        "heading": group_heading(parent),
-                        "nodes": kids,
-                    }
+                    {"parent": parent, "heading": group_heading(parent), "nodes": kids}
                 )
 
     outgoing_norm = norm_relationship_rows(outgoing_rows)
-    outgoing_generalized = build_outgoing_generalized(outgoing_norm)
+
+    # Kind-level: collapse Nation spam to (X)-[Nation]->(Country) with counts
+    outgoing_generalized_exceptions: List[Dict[str, Any]] = []
+    if level_label == "Kind":
+        keep: List[Dict[str, Any]] = []
+        collapsed_counter: Counter[Tuple[str, str]] = Counter()  # (from_name, rel_type) -> count
+
+        for r in outgoing_norm:
+            rt = (r.get("rel_type") or "").strip()
+            if rt in KIND_COLLAPSE_REL_TYPES:
+                fn = r.get("from_name") or "Node"
+                collapsed_counter[(fn, rt)] += 1
+            else:
+                keep.append(r)
+
+        outgoing_norm = keep
+
+        for (from_name, rt), cnt in collapsed_counter.items():
+            outgoing_generalized_exceptions.append(
+                {
+                    "from_level": from_name,  # show the Kind node (e.g., National)
+                    "rel_type": rt,
+                    "to_level": KIND_COLLAPSE_TARGET.get(rt, "Node"),
+                    "count": cnt,
+                }
+            )
+
+        outgoing_generalized_exceptions.sort(
+            key=lambda x: (-x["count"], x["from_level"], x["rel_type"], x["to_level"])
+        )
+
+    outgoing_generalized = build_outgoing_generalized(outgoing_norm, level_label=level_label)
 
     deep = is_deep_level(level_label)
     show_node_list = (not deep)
 
+    # For deep levels: suppress explicit node listings
     if deep:
         node_names_for_card = []
         parent_groups_for_card = []
@@ -306,12 +382,19 @@ def export_level(cfg: dict, level_label: str) -> dict:
         node_names_for_card = node_names
         parent_groups_for_card = parent_groups
 
+    relationships_mode = (
+        "generalized"
+        if (deep or level_label in GENERALIZE_RELS_LEVELS)
+        else "detailed"
+    )
+
     return {
         "level": level_label,
         "level_label": level_label,
         "card": {
             "title": f"{level_label} Level",
             "show_node_list": show_node_list,
+            "relationships_mode": relationships_mode,
             "parent_groups": parent_groups_for_card,
             "labels": {"grouping": grouping_labels},
             "node_names": node_names_for_card,
@@ -320,12 +403,13 @@ def export_level(cfg: dict, level_label: str) -> dict:
             "relationships": {
                 "outgoing": outgoing_norm,
                 "outgoing_generalized": outgoing_generalized,
+                "outgoing_generalized_exceptions": outgoing_generalized_exceptions,
             },
         },
         "meta": {
             "db": cfg["database"],
             "generated_utc": now_utc(),
-            "exporter_version": "0.3",
+            "exporter_version": "0.4",
         },
     }
 

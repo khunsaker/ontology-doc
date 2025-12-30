@@ -11,20 +11,23 @@
 ## Nodes (Shark_Name) ({{ card.total_nodes if card.total_nodes is defined else (card.node_names | length if card.node_names else 0) }})
 
 {% if card.show_node_list %}
-  {% if card.parent_groups and (card.parent_groups | length) > 0 %}
-    {% for g in card.parent_groups %}
+{% if card.parent_groups and (card.parent_groups | length) > 0 %}
+{% for g in card.parent_groups %}
 ### {{ g.heading }} ({{ g.nodes | length }})
 
-      {% for n in g.nodes %}
+{% for n in g.nodes %}
 - {{ n }}
-      {% endfor %}
-    {% endfor %}
-  {% else %}
+{% endfor %}
+
+{% endfor %}
+{% else %}
 ### All Nodes ({{ card.node_names | length if card.node_names else 0 }})
-    {% for n in card.node_names %}
+
+{% for n in card.node_names %}
 - {{ n }}
-    {% endfor %}
-  {% endif %}
+{% endfor %}
+
+{% endif %}
 {% else %}
 *(Node list suppressed for this level; total shown above.)*
 {% endif %}
@@ -41,11 +44,12 @@
 
 ## Relationships
 
-{# Outgoing relationships only (Incoming intentionally omitted to avoid duplication) #}
 {% set rels_out = (card.relationships.outgoing if card.relationships and card.relationships.outgoing else []) %}
 {% set rels_out_gen = (card.relationships.outgoing_generalized if card.relationships and card.relationships.outgoing_generalized else []) %}
+{% set rels_out_exc = (card.relationships.outgoing_generalized_exceptions if card.relationships and card.relationships.outgoing_generalized_exceptions else []) %}
+{% set mode = (card.relationships_mode if card.relationships_mode is defined else ('generalized' if not card.show_node_list else 'detailed')) %}
 
-{% if card.show_node_list %}
+{% if mode == 'detailed' %}
 ### Outgoing ({{ rels_out | length }})
 
 {% for grp in rels_out | groupby('from_name') %}
@@ -56,7 +60,18 @@
   - Source Labels: {{ r.source_labels | join(', ') }}
   - Target Labels: {{ r.target_labels | join(', ') }}
 {% endfor %}
+
 {% endfor %}
+
+{% if rels_out_exc and (rels_out_exc | length) > 0 %}
+### Outgoing (Collapsed) ({{ rels_out_exc | length }})
+
+{% for r in rels_out_exc %}
+- ({{ r.from_level }}) - [{{ r.rel_type }}] -> ({{ r.to_level }}) ({{ r.count }})
+{% endfor %}
+
+{% endif %}
+
 {% else %}
 ### Outgoing (Actual Total) ({{ rels_out | length }})
 
@@ -65,6 +80,7 @@
 {% for r in rels_out_gen %}
 - ({{ r.from_level }}) - [{{ r.rel_type }}] -> ({{ r.to_level }}) ({{ r.count }})
 {% endfor %}
+
 {% endif %}
 
 \newpage
