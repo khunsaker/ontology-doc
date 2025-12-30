@@ -1,69 +1,105 @@
-\newpage
+{# templates/semantic_card.md.j2 #}
 
 # {{ card.title }}
 
-## Node Labels
-- {{ card.labels.grouping | join(', ') }}
+## Labels
 
-{% if card.parent_groups is defined and (card.parent_groups | length) > 0 %}
+- **Grouping:** {% if card.labels and card.labels.grouping %}{{ card.labels.grouping | join(', ') }}{% else %}none{% endif %}
+
+---
+
 ## Nodes (Shark_Name)
+
+{% if card.parent_groups and (card.parent_groups | length) > 0 %}
 {% for g in card.parent_groups %}
-### {{ g.heading }} Nodes
-{% if g.nodes is defined and (g.nodes | length) > 0 %}
+### {{ g.heading }} ({{ g.nodes | length }})
+
+{% if g.nodes and (g.nodes | length) > 0 %}
 {% for n in g.nodes %}
 - {{ n }}
 {% endfor %}
 {% else %}
-- (none)
+- *(none)*
 {% endif %}
 
 {% endfor %}
+{% else %}
+{% if card.node_names and (card.node_names | length) > 0 %}
+{% for n in card.node_names %}
+- {{ n }}
+{% endfor %}
+{% else %}
+- *(none)*
+{% endif %}
 {% endif %}
 
-## Node Properties
+---
+
+## Properties
+
+{% if card.properties and (card.properties | length) > 0 %}
+| Property | Type | Required |
+|---|---|---|
 {% for p in card.properties %}
-- {{ p.name }}
+| {{ p.name }} | {{ p.type }} | {{ "Yes" if p.required else "No" }} |
 {% endfor %}
+{% else %}
+*(none)*
+{% endif %}
+
+---
 
 ## Relationships
 
+{% set rels_out = (card.relationships.outgoing if card.relationships and card.relationships.outgoing else []) %}
+{% set rels_in  = (card.relationships.incoming if card.relationships and card.relationships.incoming else []) %}
+
 ### Outgoing
-{% if card.relationships_agg.outgoing | length == 0 %}
-- (none)
-{% else %}
 
-{% if card.parent_groups is defined and (card.parent_groups | length) > 0 %}
-{% for g in card.parent_groups %}
-#### {{ g.heading }} Relationships
-{% set ns = namespace(any=false, prev_from=None) %}
-{% for r in card.relationships_agg.outgoing %}
-{% if r.from_display in g.nodes %}
-{% if ns.prev_from is not none and r.from_display != ns.prev_from %}
+{% if rels_out and (rels_out | length) > 0 %}
+{% set ns = namespace(current_from=None) %}
+{% for r in rels_out | sort(attribute='from_name') %}
+{% if ns.current_from != r.from_name %}
+{% if not loop.first %}
 
 {% endif %}
-{% set ns.any = true %}
-{% set ns.prev_from = r.from_display %}
-- ({{ r.from_display }})-[{{ r.rel_type }}]->({{ r.to_display }}){% if r.count > 1 %}  (count: {{ r.count }}){% endif %}  
-  Source Labels: {{ r.source_labels_str }}  
-  Target Labels: {{ r.target_labels_str }}
+#### {{ r.from_name }}
+{% set ns.current_from = r.from_name %}
 {% endif %}
-{% endfor %}
-{% if not ns.any %}
-- (none)
-{% endif %}
+
+- **Relationship:** `{{ r.rel_type }}`
+- **To:** {{ r.to_name }}
+- **Source Labels:** {{ r.source_labels | join(', ') }}
+- **Target Labels:** {{ r.target_labels | join(', ') }}
 
 {% endfor %}
 {% else %}
-{% set ns = namespace(prev_from=None) %}
-{% for r in card.relationships_agg.outgoing %}
-{% if ns.prev_from is not none and r.from_display != ns.prev_from %}
+*(none)*
+{% endif %}
+
+### Incoming
+
+{% if rels_in and (rels_in | length) > 0 %}
+{% set ns2 = namespace(current_from=None) %}
+{% for r in rels_in | sort(attribute='from_name') %}
+{% if ns2.current_from != r.from_name %}
+{% if not loop.first %}
 
 {% endif %}
-{% set ns.prev_from = r.from_display %}
-- ({{ r.from_display }})-[{{ r.rel_type }}]->({{ r.to_display }}){% if r.count > 1 %}  (count: {{ r.count }}){% endif %}  
-  Source Labels: {{ r.source_labels_str }}  
-  Target Labels: {{ r.target_labels_str }}
+#### {{ r.from_name }}
+{% set ns2.current_from = r.from_name %}
+{% endif %}
+
+- **Relationship:** `{{ r.rel_type }}`
+- **To:** {{ r.to_name }}
+- **Source Labels:** {{ r.source_labels | join(', ') }}
+- **Target Labels:** {{ r.target_labels | join(', ') }}
+
 {% endfor %}
+{% else %}
+*(none)*
 {% endif %}
 
-{% endif %}
+---
+
+**Total Nodes: {{ card.total_nodes if card.total_nodes is defined else (card.node_names | length if card.node_names else 0) }}**
