@@ -3,6 +3,9 @@
 import os
 import json
 from datetime import datetime, timezone
+from collections import Counter
+from typing import Any, Dict, List, Tuple
+
 from neo4j import GraphDatabase
 
 
@@ -64,6 +67,118 @@ def norm_relationship_rows(rows):
     return out
 
 
+# -----------------------------------------------------------------------------
+# Generalization logic
+# -----------------------------------------------------------------------------
+
+# Ontology ladder. Unknown levels are treated as "deep" to prevent explosion.
+LEVEL_ORDER = ["Hub", "Category", "Kind", "Family", "Type", "Class", "Instance"]
+
+# Labels that are documentation noise and should not drive generalization.
+NOISE_LABELS = {
+    "Object", "People", "Person", "SharkNode", "System",
+    "__MigrationNode__", "__MigrationRelationship__"
+}
+
+# Canonical display names (tune as desired). Manufacturer is treated as Company.
+CANONICAL_DISPLAY = {
+    "AirType": "Air Type",
+    "AirSystem": "Air System",
+    "AirVehicle": "Air Vehicle",
+    "ArmedForces": "Armed Forces",
+    "Company": "Company",
+    "Manufacturer": "Company",
+    "Organization": "Organization",
+    "Place": "Place",
+    "Weapon": "Weapon",
+    "Ship": "Ship",
+}
+
+# Priority: first match wins after removing NOISE_LABELS.
+LEVEL_LABEL_PRIORITY = [
+    "Hub", "Category", "Kind", "Family",
+    "AirType",
+    "Type", "Class", "Instance",
+    "Company", "Manufacturer",
+    "ArmedForces",
+    "Organization",
+    "Place",
+    "Weapon",
+    "Ship",
+    "AirSystem",
+    "AirVehicle",
+]
+
+
+def _safe_level_index(level_label: str) -> int:
+    try:
+        return LEVEL_ORDER.index(level_label)
+    except ValueError:
+        return 10_000
+
+
+def is_deep_level(level_label: str) -> bool:
+    """Deep = strictly below Family in the ontology ladder."""
+    return _safe_level_index(level_label) > _safe_level_index("Family")
+
+
+def pick_level_display(labels: List[str]) -> str:
+    """
+    Choose a stable generalized endpoint label from a node's label set,
+    ignoring noise labels. Uses a priority list, then falls back.
+    """
+    s = set(labels or [])
+    s = s - NOISE_LABELS
+
+    for key in LEVEL_LABEL_PRIORITY:
+        if key in s:
+            return CANONICAL_DISPLAY.get(key, key)
+
+    # Fallback: any remaining label (stable)
+    for lbl in sorted(s):
+        return CANONICAL_DISPLAY.get(lbl, lbl)
+
+    return "Node"
+
+
+def build_outgoing_generalized(outgoing_norm: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Build generalized unique outgoing rel patterns with counts, from the
+    normalized outgoing relationship rows.
+
+    Safer behavior:
+      - treats rel_type as invalid if blank/whitespace
+      - tolerates missing/empty labels without throwing
+      - produces stable output ordering
+    """
+    counter: Counter[Tuple[str, str, str]] = Counter()
+
+    for r in outgoing_norm or []:
+        rel_type = r.get("rel_type")
+        if rel_type is None:
+            continue
+        rel_type = str(rel_type).strip()
+        if rel_type == "":
+            continue
+
+        src_labels = r.get("source_labels") or []
+        tgt_labels = r.get("target_labels") or []
+
+        from_level = pick_level_display(src_labels)
+        to_level = pick_level_display(tgt_labels)
+
+        counter[(from_level, rel_type, to_level)] += 1
+
+    out = [
+        {"from_level": k[0], "rel_type": k[1], "to_level": k[2], "count": v}
+        for k, v in counter.items()
+    ]
+
+    # Sort: most represented first, then stable alpha
+    out.sort(key=lambda x: (-x["count"], x["from_level"], x["rel_type"], x["to_level"]))
+    return out
+
+
 def export_level(cfg: dict, level_label: str) -> dict:
     level_label = sanitize_label(level_label)
 
@@ -93,18 +208,7 @@ def export_level(cfg: dict, level_label: str) -> dict:
     RETURN collect(DISTINCT k) AS props
     """
 
-    q_incoming = f"""
-    MATCH (src)-[r]->(tgt:`{level_label}`)
-    WHERE src.Shark_Name IS NOT NULL AND tgt.Shark_Name IS NOT NULL
-    RETURN
-      src.Shark_Name AS from_name,
-      type(r) AS rel_type,
-      tgt.Shark_Name AS to_name,
-      labels(src) AS source_labels,
-      labels(tgt) AS target_labels
-    ORDER BY from_name, rel_type, to_name
-    """
-
+    # Outgoing only (Incoming intentionally removed to prevent duplication)
     q_outgoing = f"""
     MATCH (src:`{level_label}`)-[r]->(tgt)
     WHERE src.Shark_Name IS NOT NULL AND tgt.Shark_Name IS NOT NULL
@@ -118,7 +222,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
     """
 
     # Parent grouping assumes: (p)-[:<LevelLabel>]->(n:<LevelLabel>)
-    # We only execute this if the relationship type exists (to avoid warnings).
     q_parent_groups = f"""
     MATCH (p)-[:`{level_label}`]->(n:`{level_label}`)
     WHERE p.Shark_Name IS NOT NULL AND trim(toString(p.Shark_Name)) <> ''
@@ -137,12 +240,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
             grouping_rows = session.execute_read(lambda tx: fetch_all(tx, q_grouping))
             nodes_rows = session.execute_read(lambda tx: fetch_all(tx, q_nodes))
             props_rows = session.execute_read(lambda tx: fetch_all(tx, q_props))
-
-            # Hub: only outgoing relationships (per your ontology); skip incoming query.
-            incoming_rows = []
-            if level_label != "Hub":
-                incoming_rows = session.execute_read(lambda tx: fetch_all(tx, q_incoming))
-
             outgoing_rows = session.execute_read(lambda tx: fetch_all(tx, q_outgoing))
 
             parent_groups_rows = []
@@ -167,8 +264,6 @@ def export_level(cfg: dict, level_label: str) -> dict:
         properties = sorted(set(props_rows[0]["props"] or []))
 
     def group_heading(parent: str) -> str:
-        # Your examples for Kind level:
-        # Aircraft Kind, Organization Kind, Place Kind, Ships Kind, Weapon Kind
         if level_label == "Kind":
             if parent == "Ship":
                 return "Ships Kind"
@@ -180,11 +275,8 @@ def export_level(cfg: dict, level_label: str) -> dict:
                 return "Place Kind"
             if parent == "Weapon":
                 return "Weapon Kind"
-
-        # Category example: Hub (Parent)
         if level_label == "Category" and parent == "Hub":
             return "Hub (Parent)"
-
         return f"{parent} {level_label}"
 
     parent_groups = []
@@ -201,36 +293,44 @@ def export_level(cfg: dict, level_label: str) -> dict:
                     }
                 )
 
-    # IMPORTANT: We do NOT force Hub into parent_groups.
-    # For Hub, the template should render using node_names (Nodes (Shark_Name)).
+    outgoing_norm = norm_relationship_rows(outgoing_rows)
+    outgoing_generalized = build_outgoing_generalized(outgoing_norm)
 
-    # ----------------------------
-    # Final payload
-    # ----------------------------
+    deep = is_deep_level(level_label)
+    show_node_list = (not deep)
+
+    if deep:
+        node_names_for_card = []
+        parent_groups_for_card = []
+    else:
+        node_names_for_card = node_names
+        parent_groups_for_card = parent_groups
+
     return {
         "level": level_label,
         "level_label": level_label,
         "card": {
             "title": f"{level_label} Level",
-            "parent_groups": parent_groups,
+            "show_node_list": show_node_list,
+            "parent_groups": parent_groups_for_card,
             "labels": {"grouping": grouping_labels},
-            "node_names": node_names,
+            "node_names": node_names_for_card,
             "total_nodes": total_nodes,
             "properties": [{"name": p, "type": "unknown", "required": False} for p in properties],
             "relationships": {
-                "incoming": norm_relationship_rows(incoming_rows),
-                "outgoing": norm_relationship_rows(outgoing_rows),
+                "outgoing": outgoing_norm,
+                "outgoing_generalized": outgoing_generalized,
             },
         },
         "meta": {
             "db": cfg["database"],
             "generated_utc": now_utc(),
-            "exporter_version": "0.1",
+            "exporter_version": "0.3",
         },
     }
 
 
-def main():
+def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser()

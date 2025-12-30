@@ -1,105 +1,70 @@
-{# templates/semantic_card.md.j2 #}
-
 # {{ card.title }}
 
 ## Labels
 
-- **Grouping:** {% if card.labels and card.labels.grouping %}{{ card.labels.grouping | join(', ') }}{% else %}none{% endif %}
+{% if card.labels and card.labels.grouping %}
+- {{ card.labels.grouping | join(', ') }}
+{% else %}
+- none
+{% endif %}
 
----
+## Nodes (Shark_Name) ({{ card.total_nodes if card.total_nodes is defined else (card.node_names | length if card.node_names else 0) }})
 
-## Nodes (Shark_Name)
-
-{% if card.parent_groups and (card.parent_groups | length) > 0 %}
-{% for g in card.parent_groups %}
+{% if card.show_node_list %}
+  {% if card.parent_groups and (card.parent_groups | length) > 0 %}
+    {% for g in card.parent_groups %}
 ### {{ g.heading }} ({{ g.nodes | length }})
 
-{% if g.nodes and (g.nodes | length) > 0 %}
-{% for n in g.nodes %}
+      {% for n in g.nodes %}
 - {{ n }}
-{% endfor %}
-{% else %}
-- *(none)*
-{% endif %}
-
-{% endfor %}
-{% else %}
-{% if card.node_names and (card.node_names | length) > 0 %}
-{% for n in card.node_names %}
+      {% endfor %}
+    {% endfor %}
+  {% else %}
+### All Nodes ({{ card.node_names | length if card.node_names else 0 }})
+    {% for n in card.node_names %}
 - {{ n }}
-{% endfor %}
+    {% endfor %}
+  {% endif %}
 {% else %}
-- *(none)*
+*(Node list suppressed for this level; total shown above.)*
 {% endif %}
-{% endif %}
-
----
 
 ## Properties
 
 {% if card.properties and (card.properties | length) > 0 %}
-| Property | Type | Required |
-|---|---|---|
 {% for p in card.properties %}
-| {{ p.name }} | {{ p.type }} | {{ "Yes" if p.required else "No" }} |
+- {{ p.name }}
 {% endfor %}
 {% else %}
 *(none)*
 {% endif %}
-
----
 
 ## Relationships
 
+{# Outgoing relationships only (Incoming intentionally omitted to avoid duplication) #}
 {% set rels_out = (card.relationships.outgoing if card.relationships and card.relationships.outgoing else []) %}
-{% set rels_in  = (card.relationships.incoming if card.relationships and card.relationships.incoming else []) %}
+{% set rels_out_gen = (card.relationships.outgoing_generalized if card.relationships and card.relationships.outgoing_generalized else []) %}
 
-### Outgoing
+{% if card.show_node_list %}
+### Outgoing ({{ rels_out | length }})
 
-{% if rels_out and (rels_out | length) > 0 %}
-{% set ns = namespace(current_from=None) %}
-{% for r in rels_out | sort(attribute='from_name') %}
-{% if ns.current_from != r.from_name %}
-{% if not loop.first %}
+{% for grp in rels_out | groupby('from_name') %}
+#### {{ grp.grouper }} ({{ grp.list | length }})
 
-{% endif %}
-#### {{ r.from_name }}
-{% set ns.current_from = r.from_name %}
-{% endif %}
-
-- **Relationship:** `{{ r.rel_type }}`
-- **To:** {{ r.to_name }}
-- **Source Labels:** {{ r.source_labels | join(', ') }}
-- **Target Labels:** {{ r.target_labels | join(', ') }}
-
+{% for r in grp.list %}
+- ({{ r.from_name }}) - [{{ r.rel_type }}] -> ({{ r.to_name }})
+  - Source Labels: {{ r.source_labels | join(', ') }}
+  - Target Labels: {{ r.target_labels | join(', ') }}
+{% endfor %}
 {% endfor %}
 {% else %}
-*(none)*
-{% endif %}
+### Outgoing (Actual Total) ({{ rels_out | length }})
 
-### Incoming
+### Outgoing (Generalized) ({{ rels_out_gen | length }})
 
-{% if rels_in and (rels_in | length) > 0 %}
-{% set ns2 = namespace(current_from=None) %}
-{% for r in rels_in | sort(attribute='from_name') %}
-{% if ns2.current_from != r.from_name %}
-{% if not loop.first %}
-
-{% endif %}
-#### {{ r.from_name }}
-{% set ns2.current_from = r.from_name %}
-{% endif %}
-
-- **Relationship:** `{{ r.rel_type }}`
-- **To:** {{ r.to_name }}
-- **Source Labels:** {{ r.source_labels | join(', ') }}
-- **Target Labels:** {{ r.target_labels | join(', ') }}
-
+{% for r in rels_out_gen %}
+- ({{ r.from_level }}) - [{{ r.rel_type }}] -> ({{ r.to_level }}) ({{ r.count }})
 {% endfor %}
-{% else %}
-*(none)*
 {% endif %}
 
----
-
-**Total Nodes: {{ card.total_nodes if card.total_nodes is defined else (card.node_names | length if card.node_names else 0) }}**
+\newpage
