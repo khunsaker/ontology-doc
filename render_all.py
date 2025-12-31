@@ -76,25 +76,35 @@ def main():
 
         rendered_files.append(md_path)
 
-    # 3) Assemble
+    # 3) Generate diagrams (requires JSON exports)
+    diagrams_script = root / "generate_diagrams.py"
+    if diagrams_script.exists():
+        run(["python3", "generate_diagrams.py"], cwd=str(root))
+
+    # 4) Assemble
     title_path = root / "templates" / "title.md"
+    diagrams_path = root / "templates" / "diagrams.md"
     with assembled_path.open("w", encoding="utf-8") as out:
         # Prepend title page if it exists
         if title_path.exists():
             out.write(title_path.read_text(encoding="utf-8").rstrip() + "\n\n")
+        # Include diagrams section if it exists
+        if diagrams_path.exists():
+            out.write(diagrams_path.read_text(encoding="utf-8").rstrip() + "\n\n")
         for p in rendered_files:
             out.write(p.read_text(encoding="utf-8").rstrip() + "\n\n")
 
     print(f"Wrote {assembled_path}")
 
-    # 4) Optional PDF build
+    # 5) Optional PDF build
     if args.build_pdf:
         run([
             "pandoc",
             str(assembled_path),
             "-o",
             args.pdf_out,
-            "--pdf-engine=xelatex"
+            "--pdf-engine=xelatex",
+            "-V", "header-includes=\\usepackage{graphicx}"
         ], cwd=str(root))
         print(f"Wrote {root / args.pdf_out}")
 
