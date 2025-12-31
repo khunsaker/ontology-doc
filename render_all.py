@@ -77,7 +77,11 @@ def main():
         rendered_files.append(md_path)
 
     # 3) Assemble
+    title_path = root / "templates" / "title.md"
     with assembled_path.open("w", encoding="utf-8") as out:
+        # Prepend title page if it exists
+        if title_path.exists():
+            out.write(title_path.read_text(encoding="utf-8").rstrip() + "\n\n")
         for p in rendered_files:
             out.write(p.read_text(encoding="utf-8").rstrip() + "\n\n")
 
