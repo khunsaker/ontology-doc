@@ -4,7 +4,7 @@
 
 {\LARGE Canonical Data Set for Shark2 KB\par}
 \vspace{0.4cm}
-{\Large Ontology Reference Documentation\par}
+{\Large Data Model Reference Documentation\par}
 
 \vspace{0.8cm}
 
@@ -13,6 +13,18 @@
 \textbf{Description:} Authoritative structured representation of entities, relationships, \\
 and classifications within the Shark Knowledge Base. \\
 \textbf{Generated:} \today
+\end{flushleft}
+
+\vspace{0.4cm}
+
+\begin{flushleft}
+\textbf{Database Statistics:}
+\begin{itemize}
+\item \textbf{Nodes:} {{ stats.nodes | default('N/A') }}
+\item \textbf{Relationships:} {{ stats.relationships | default('N/A') }}
+\item \textbf{Labels:} {{ stats.labels | default('N/A') }}
+\item \textbf{Properties:} {{ stats.properties | default('N/A') }}
+\end{itemize}
 \end{flushleft}
 
 \vspace{0.8cm}
@@ -35,13 +47,19 @@ This document provides a canonical reference for the Shark knowledge graph, incl
 \end{flushleft}
 
 \begin{flushleft}
-Each section corresponds to a logical layer in the ontology and reflects the current authoritative state of the knowledge base.
+Each section corresponds to a logical layer in the data model and reflects the current authoritative state of the knowledge base.
 \end{flushleft}
 
 \vspace{0.6cm}
 
 \begin{flushleft}
 \textbf{This document is automatically generated. Do not edit manually.}
+\end{flushleft}
+
+\vspace{0.6cm}
+
+\begin{flushleft}
+\textbf{Classification Note:} This document applies to the Unclassified version of the Shark Knowledge Base and will form the basis for future Classified versions. Significant changes and additions are expected at other classification levels; the Classified database version could be as much as 10 times larger. The purpose of this document is to provide a representative data set for Unclassified coding and development.
 \end{flushleft}
 
 \end{titlepage}
